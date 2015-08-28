@@ -1,6 +1,5 @@
 #birthday-page {
     display: none;
-    border: 1px solid blue;
 }
 
 #replay-page {
@@ -9,8 +8,30 @@
     opacity: 0.7;
 }
 
-#center-birthday {
-    background-color: red;
-    width: 100px;
-    height: 150px;
+#center-video, #center-birthday {
+    height: 100%;
+}
+
+.middle-row div {
+    float: left;
+}
+
+.left-col, .right-col {
+    width: 25%;
+}
+
+.center-col {
+    width: 49.5%;
+}
+
+.bottom-row {
+    clear: both;
+}
+
+.top-row .thumbnail, .bottom-row .thumbnail {
+    width: 12.2%;
+}
+
+.middle-row .thumbnail {
+    width: 48%;
 }
