@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+</head>
+<body>
+    <div id="main-page">
+        <video class="loop-video" width="150" autoplay muted loop>
+            <source src="getty.webm" type="video/mp4">
+        </video>
+        <video id="center-video" width="500" autoplay controls>
+            <source src="choreo.webm" type="video/mp4">
+        </video>
+        <video class="loop-video" width="150" autoplay muted loop>
+            <source src="getty.webm" type="video/mp4">
+        </video>
+    </div>
+
+    <div id="birthday-page">
+        <video class="birthday-video" id="slowest-birthday-video" width="150">
+            <source src="birthday.webm" type="video/mp4">
+        </video>
+        <div id="center-birthday">
+            <source src="choreo.webm" type="video/mp4">
+        </div>
+        <video class="birthday-video" width="150">
+            <source src="birthday.webm" type="video/mp4">
+        </video>
+    </div>
+
+    <div id="replay-page">
+        <button type="button" onClick="window.location.reload();">Replay</button>
+    </div>
+
+<script>
+    document.getElementById('center-video').addEventListener('ended',myHandler,false);
+    function myHandler(e) {
+        document.getElementById('main-page').style.display = 'none';
+        document.getElementById('birthday-page').style.display = 'block';
+        var videos = document.getElementsByClassName('birthday-video');
+        for (var i = 0; i < videos.length; i++) {
+            videos.item(i).play();
+        }
+    }
+
+    document.getElementById('slowest-birthday-video').addEventListener('ended',myOtherHandler,false);
+    function myOtherHandler(e) {
+        document.getElementById('replay-page').style.display = 'block';
+    }
+</script>
+</body>
+</html>

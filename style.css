@@ -1,0 +1,16 @@
+#birthday-page {
+    display: none;
+    border: 1px solid blue;
+}
+
+#replay-page {
+    display: none;
+    background-color: black;
+    opacity: 0.7;
+}
+
+#center-birthday {
+    background-color: red;
+    width: 100px;
+    height: 150px;
+}
