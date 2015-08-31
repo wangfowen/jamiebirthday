@@ -5,6 +5,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 <body>
+<div id="loading-page"></div>
+
 <div id="main-page">
     <div class="top-row">
         <video class="thumbnail" autoplay muted loop>
@@ -123,7 +125,7 @@
             </video>
         </div>
         <div class="center-col">
-            <video id="center-birthday" autoplay controls muted>
+            <video id="center-birthday" controls muted>
                 <source src="choreo.webm" type="video/mp4">
             </video>
         </div>
@@ -172,20 +174,25 @@
     </div>
 </div>
 
-<script>
-    document.getElementById('center-video').addEventListener('ended',myHandler,false);
-    function myHandler(e) {
-        document.getElementById('main-page').style.display = 'none';
-        document.getElementById('birthday-page').style.display = 'block';
+<script type="text/javascript">
+    $(window).load(function() {
+        $("#loading-page").fadeOut("slow");
+    })
+
+    document.getElementById('center-video').addEventListener('ended', showBirthday, false);
+    function showBirthday(e) {
+        $("#main-page").fadeOut("fast");
+        $("#birthday-page").fadeIn("slow");
         var videos = document.getElementsByClassName('thumbnail');
         for (var i = 0; i < videos.length; i++) {
             videos.item(i).play();
         }
     }
 
-    document.getElementById('slowest-thumbnail').addEventListener('ended',myOtherHandler,false);
-    function myOtherHandler(e) {
-        document.getElementById('overlay').style.visibility = 'visible';
+    document.getElementById('slowest-thumbnail').addEventListener('ended', showReplay, false);
+    function showReplay(e) {
+        // $("#replay-page").fadeIn("slow");
+        document.getElementById('overlay').style.display = 'block';
     }
 </script>
 </body>
