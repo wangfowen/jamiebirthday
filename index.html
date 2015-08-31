@@ -168,9 +168,7 @@
 </div>
 
 <div id="overlay">
-    <!--<div id="replay-page">-->
-        <img src="replay.png" onClick="window.location.reload();"/>
-    <!--</div>-->
+    <img src="replay.png" onClick="window.location.reload();"/>
 </div>
 
 <script type="text/javascript">
@@ -190,8 +188,8 @@
 
     document.getElementById('slowest-thumbnail').addEventListener('ended', showReplay, false);
     function showReplay(e) {
-        // $("#replay-page").fadeIn("slow");
-        document.getElementById('overlay').style.display = 'block';
+        $("#overlay").fadeIn("slow");
+        //document.getElementById('overlay').style.display = 'block';
     }
 </script>
 </body>

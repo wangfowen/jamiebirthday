@@ -24,16 +24,6 @@
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-#replay-page {
-    width: 30%;
-    height: 25%;
-    margin: 13% auto;
-    background-color: rgba(10, 10, 10, 0.85);
-    text-align: center;
-    color: rgb(200, 200, 200);
-    border: 1px solid black;
-}
-
 #center-video, #center-birthday {
     height: 100%;
 }
