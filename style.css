@@ -21,7 +21,7 @@
     height: 100%;
     text-align: center;
     z-index: 1000;
-    background-color: rgba(100, 100, 100, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 #replay-page {
@@ -29,10 +29,7 @@
     height: 25%;
     margin: 13% auto;
     background-color: rgba(10, 10, 10, 0.85);
-    padding-top: 100px;
     text-align: center;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-size: 30px;
     color: rgb(200, 200, 200);
     border: 1px solid black;
 }
@@ -66,7 +63,7 @@
 }
 
 img {
-    width: 40px;
+    width: 120px;
     cursor: pointer;
-    margin: 20px;
+    margin-top: 300px;
 }
