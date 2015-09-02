@@ -114,31 +114,7 @@
             <source src="birthday.webm" type="video/mp4">
         </video>
     </div>
-
-    <div class="middle-row">
-        <div class="left-col">
-            <video class="thumbnail" muted>
-                <source src="birthday.webm" type="video/mp4">
-            </video>
-            <video class="thumbnail" muted>
-                <source src="birthday.webm" type="video/mp4">
-            </video>
-        </div>
-        <div class="center-col">
-            <video id="center-birthday">
-                <source src="choreo.webm" type="video/mp4">
-            </video>
-        </div>
-        <div class="right-col">
-            <video class="thumbnail" muted>
-                <source src="birthday.webm" type="video/mp4">
-            </video>
-            <video class="thumbnail" muted>
-                <source src="birthday.webm" type="video/mp4">
-            </video>
-        </div>
-    </div>
-
+    
     <div class="bottom-row">
         <video class="thumbnail" muted>
             <source src="birthday.webm" type="video/mp4">
@@ -189,7 +165,6 @@
     document.getElementById('slowest-thumbnail').addEventListener('ended', showReplay, false);
     function showReplay(e) {
         $("#overlay").fadeIn("slow");
-        //document.getElementById('overlay').style.display = 'block';
     }
 </script>
 </body>
