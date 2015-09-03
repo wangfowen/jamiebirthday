@@ -188,15 +188,28 @@
 </div>
 
 <script type="text/javascript">
-    $(window).load(function() {
-        $("#loading-page").fadeOut("slow");
+  var $choreo = $('.choreo');
+  var loadedCount = 0;
 
-        $('.choreo').each(function(i) {
-          this.play();
-        });
+  $choreo.each(function(i) {
+    this.addEventListener('loadeddata', function() {
+      loadedCount++;
 
-        document.getElementById('center-video').play();
-    })
+      if (loadedCount === 20) {
+        whenLoaded();
+      }
+    }, false);
+  });
+
+  function whenLoaded() {
+    $("#loading-page").fadeOut("slow");
+
+    $choreo.each(function(i) {
+      this.play();
+    });
+
+    document.getElementById('center-video').play();
+  }
 
     document.getElementById('center-video').addEventListener('ended', showBirthday, false);
     function showBirthday(e) {
