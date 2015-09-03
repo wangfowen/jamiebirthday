@@ -37,22 +37,37 @@
 }
 
 .center-col {
-    width: 49.5%;
+    width: 49.9%;
+    height: 250px;
 }
 
 .bottom-row {
     clear: both;
 }
 
+.wrapper {
+    width: 12.2%;
+    height: 250px;
+    overflow: hidden;
+    float: left;
+    margin: 2px;
+}
+
+.middle-row .wrapper {
+    width: 48%;
+}
+
+.choreo {
+    width: 550px;
+    margin-left: -189px;
+    margin-top: -15%;
+}
+
 .top-row .thumbnail, .bottom-row .thumbnail {
     width: 12.2%;
 }
 
-.middle-row .thumbnail {
-    width: 48%;
-}
-
-img {
+#overlay img {
     width: 120px;
     cursor: pointer;
     margin-top: 300px;
