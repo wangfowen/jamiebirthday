@@ -138,11 +138,19 @@
   var $choreo = $('.choreo');
   var loadedCount = 0;
 
+  document.getElementById('center-video').addEventListener('loadeddata', function() {
+      loadedCount++;
+
+      if (loadedCount === 21) {
+        whenLoaded();
+      }
+    }, false);
+
   $choreo.each(function(i) {
     this.addEventListener('loadeddata', function() {
       loadedCount++;
 
-      if (loadedCount === 20) {
+      if (loadedCount === 21) {
         whenLoaded();
       }
     }, false);
