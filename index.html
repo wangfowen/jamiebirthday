@@ -138,7 +138,7 @@
   var $choreo = $('.choreo');
   var loadedCount = 0;
 
-  document.getElementById('center-video').addEventListener('loadeddata', function() {
+  document.getElementById('center-video').addEventListener('canplaythrough', function() {
       loadedCount++;
 
       if (loadedCount === 21) {
@@ -147,7 +147,7 @@
     }, false);
 
   $choreo.each(function(i) {
-    this.addEventListener('loadeddata', function() {
+    this.addEventListener('canplaythrough', function() {
       loadedCount++;
 
       if (loadedCount === 21) {
