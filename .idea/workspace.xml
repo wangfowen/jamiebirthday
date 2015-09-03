@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc38d34b-4119-41e2-bac8-80439f11b112" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/choreo/Bonnie.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/choreo/Celia.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/choreo/Chris.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/choreo/Christina.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/choreo/Freddy.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/choreo/John.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/choreo/Jon.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/choreo/Kristie.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/choreo/Michael.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/choreo/Nicole.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/choreo/Owen.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/choreo/Rui.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/choreo/Stephane.webm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/getty.webm" afterPath="" />
     </list>
     <ignored path="jamiebirthday.iws" />
     <ignored path=".idea/workspace.xml" />
