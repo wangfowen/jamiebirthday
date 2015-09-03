@@ -67,7 +67,7 @@
     width: 12.2%;
 }
 
-img {
+#overlay img {
     width: 120px;
     cursor: pointer;
     margin-top: 300px;
